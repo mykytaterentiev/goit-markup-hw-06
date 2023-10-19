@@ -219,7 +219,7 @@ button {
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(./images/Jimmy.jpg);
+        url(/images/Jimmy.jpg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -760,3 +760,78 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*==========Media===============*/
+
+    @media screen and (min-width: 319px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .second-section-item {
+        padding-bottom: 72px;
+    }
+
+    .svg-box {
+        display: none;
+    }
+
+    .container-title {
+        display: none;
+    }
+
+    .item-title {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+} 
+
+ @media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    
+    .box {
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .second-section-item {
+        width: calc((100% - 24px) / 2)
+    }
+ } 
+
+ @media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1128px;
+    }
+
+    .svg-box {
+        display: flex;
+    }
+
+    .container-title {
+       display: flex;
+    }
+
+    .box {
+        flex-wrap: nowrap;
+    }
+
+ }
